@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/echoClient.iml" filepath="$PROJECT_DIR$/.idea/modules/echoClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/echoClient_main.iml" filepath="$PROJECT_DIR$/.idea/modules/echoClient_main.iml" group="echoClient" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/echoClient_test.iml" filepath="$PROJECT_DIR$/.idea/modules/echoClient_test.iml" group="echoClient" />
+    </modules>
+  </component>
+</project>

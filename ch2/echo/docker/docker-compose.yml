@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  echo-server:
+    container_name: echo-server
+    image: pawmot/echo-server
+    command: '8080'
+    ports:
+     - "8080:8080"
+
+networks:
+  default:
+    external:
+      name: echo
