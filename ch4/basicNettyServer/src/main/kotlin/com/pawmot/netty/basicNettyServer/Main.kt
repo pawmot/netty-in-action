@@ -13,6 +13,7 @@ fun main(args: Array<String>) {
                 when (transportName) {
                     "oio" -> OioTransportSpecifier()
                     "nio" -> NioTransportSpecifier()
+                    "epoll" -> EpollTransportSpecifier()
                     else -> {
                         throw IllegalArgumentException()
                     }
@@ -20,13 +21,13 @@ fun main(args: Array<String>) {
 
         // start
         val port = args[1].toInt()
-        NettyOioServer().serve(port, transportSpecifier)
+        NettyServer().serve(port, transportSpecifier)
     } catch (ex: IllegalArgumentException) {
         printUsageAndExit()
     }
 }
 
 private fun printUsageAndExit() {
-    println("Usage: please specify transport and port number ([oio|nio] <port>).")
+    println("Usage: please specify transport and port number ([oio|nio|epoll] <port>).")
     exitProcess(1)
 }

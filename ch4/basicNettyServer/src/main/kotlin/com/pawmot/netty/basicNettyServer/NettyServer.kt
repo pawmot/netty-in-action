@@ -10,7 +10,7 @@ import io.netty.channel.socket.SocketChannel
 import io.netty.util.CharsetUtil.UTF_8
 import java.net.InetSocketAddress
 
-class NettyOioServer {
+class NettyServer {
     fun serve(port: Int, transportSpecifier: TransportSpecifier) {
         val buf = Unpooled.unreleasableBuffer(Unpooled.copiedBuffer("Hi\r\n", UTF_8))
         val evLoopGroup = transportSpecifier.eventLoopGroup()
